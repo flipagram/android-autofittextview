@@ -1,6 +1,9 @@
 # AutoFitTextView
 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/me.grantland/autofittextview/badge.svg?style=flat)](https://maven-badges.herokuapp.com/maven-central/me.grantland/autofittextview)
+This is a fork of
+[grantland's android-autofittextview](https://github.com/grantland/android-autofittextview) that
+includes [Will5's](https://github.com/Will5) changes to detect changes in height as well. It's been
+further modified to work on [jitpack.io](https://jitpack.io/#flipagram/android-autofittextview).
 
 A TextView that automatically resizes text to fit perfectly within its bounds.
 
@@ -9,9 +12,21 @@ A TextView that automatically resizes text to fit perfectly within its bounds.
 
 ## Usage
 
+First, add the following to root build.gradle at the end of repositories:
+```cson
+
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+Then in your `app/build.gradle`:
 ```cson
 dependencies {
-    compile 'me.grantland:autofittextview:0.2.+'
+    compile 'com.github.flipagram:android-autofittextview:0.2.1-FG'
 }
 ```
 
