@@ -137,6 +137,7 @@ public class AutofitHelper {
         if (isAutofitHeightEnabled) {
             int targetHeight = view.getHeight() - view.getPaddingTop() - view.getPaddingBottom();
             if (targetHeight > 0) {
+                paint.setTextSize(size);
                 float textHeight = getTextHeight(text, paint, targetWidth, size);
                 float heightRatio = targetHeight / textHeight;
                 float newSize = size * heightRatio;
