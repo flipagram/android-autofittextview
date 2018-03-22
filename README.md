@@ -26,7 +26,7 @@ allprojects {
 Then in your `app/build.gradle`:
 ```cson
 dependencies {
-    compile 'com.github.flipagram:android-autofittextview:0.2.1-FG'
+    compile 'com.github.vernazza:android-autofittextview:-SNAPSHOT'
 }
 ```
 
